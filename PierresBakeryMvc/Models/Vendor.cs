@@ -8,8 +8,7 @@ namespace PierresBakeryMvc.Models
     public string VendorName { get; }
     public string VendorDescription { get; } 
     public int Id { get; }
-    // VendorDescription 
-    // orderList
+    public List<Order> Orders { get; set; }
 
     public Vendor(string vendorName, string vendorDescription)
     {
@@ -17,6 +16,7 @@ namespace PierresBakeryMvc.Models
       VendorDescription = vendorDescription;
       _instances.Add(this);
       Id = _instances.Count;
+      Orders = new List<Order>{};
     }
 
     public static void ClearAll()
@@ -32,6 +32,11 @@ namespace PierresBakeryMvc.Models
     public static Vendor Find(int searchId)
     {
       return _instances[searchId-1];
+    }
+
+    public void AddOrder(Order order)
+    {
+      Orders.Add(order);
     }
 
   }

@@ -88,8 +88,22 @@ namespace PierresBakeryMvc.Tests
 
       Vendor result = Vendor.Find(2);
 
-      //Assert
       Assert.AreEqual(newVendor2, result);
+    }
+
+    [TestMethod]
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
+    {
+      string vendorName = "Flying Fish Company";
+      string vendorDescription = "Flying Fish Company Description";
+      Order newOrder = new Order (vendorName);
+      List<Order> newList = new List<Order> { newOrder };
+      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      newVendor.AddOrder(newOrder);
+
+      List<Order> result = newVendor.Orders;
+
+      CollectionAssert.AreEqual(newList, result);
     }
 
   }
