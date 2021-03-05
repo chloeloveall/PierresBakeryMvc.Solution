@@ -50,15 +50,15 @@ A detailed description
     * To exit the REPL press: Ctrl +C
 
 ### Installation
-* Clone the repository with the following git terminal command: ```$ git clone https://github.com/chloeloveall/PierresBakery.Solution.git```
+* Clone the repository with the following git terminal command: ```$ git clone https://github.com/chloeloveall/PierresBakeryMvc.Solution.git```
 * Open the project directory in your terminal
-* Navigate to the ```PierresBakery.Tests``` directory
+* Navigate to the ```PierresBakeryMvc.Tests``` directory
     * To create ```obj``` directories in both production and test projects, run the terminal command: ```$ dotnet restore```
     * **NOTE**: Do not touch the code in either ```obj``` directory.
 * To launch the program, run the terminal command: ```dotnet run```
 
 ### Unit Testing with MSTest
-* Navigate to the ```PierresBakery.Tests``` directory
+* Navigate to the ```PierresBakeryMvc.Tests``` directory
 * Run the terminal command: ```$ dotnet test```
 * If everything is set up correctly, you will see something similar to this: 
 ![MSTest Screenshot](img/mstest-screenshot.png)
@@ -80,7 +80,7 @@ A detailed description
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 1. Fork the project on GirHub
-    * Follow [Installation/Setup Instructions](#setup-&-installation-requirements) above
+    * Follow [Installation and Setup Requirements](#setup-and-installation-requirements) above
 2. Create your Feature Branch: ```$ git checkout -b YourFeatureBranchName```
 3. Commit your Changes ```$ git commit -m 'Add some Amazing Feature'```
 4. Push to your feature branch on Github ```$ git push origin YourFeatureBranchName```
@@ -95,7 +95,6 @@ Contributions are what make the open source community such an amazing place to b
 * [Shields](https://shields.io/)
 * [Choose an open source license](https://choosealicense.com/)
 * [Microsoft C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
-* [Patorjk.com ASCII Art Generator](https://www.patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
 ## Contact Information
 
