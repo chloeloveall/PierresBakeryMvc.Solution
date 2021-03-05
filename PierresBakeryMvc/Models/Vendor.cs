@@ -5,8 +5,8 @@ namespace PierresBakeryMvc.Models
   public class Vendor
   {
     private static List<Vendor> _instances = new List<Vendor> {};
-    public string VendorName { get; }
-    public string VendorDescription { get; } 
+    public string VendorName { get; set; }
+    public string VendorDescription { get; set; } 
     public int Id { get; }
     public List<Order> Orders { get; set; }
 
