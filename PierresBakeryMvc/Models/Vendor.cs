@@ -6,13 +6,15 @@ namespace PierresBakeryMvc.Models
   {
     private static List<Vendor> _instances = new List<Vendor> {};
     public string VendorName { get; }
+    public string VendorDescription { get; } 
     public int Id { get; }
     // VendorDescription 
     // orderList
 
-    public Vendor(string vendorName)
+    public Vendor(string vendorName, string vendorDescription)
     {
       VendorName = vendorName;
+      VendorDescription = vendorDescription;
       _instances.Add(this);
       Id = _instances.Count;
     }
