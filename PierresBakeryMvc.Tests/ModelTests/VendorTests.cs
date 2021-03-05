@@ -12,8 +12,19 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor();
+      Vendor newVendor = new Vendor("Test Vendor");
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
+
+    [TestMethod]
+    public void GetVendorName_ReturnsVendorName_String()
+    {
+      string vendorName = "Test Vendor";
+      Vendor newVendor = new Vendor(vendorName);
+
+      string result = newVendor.VendorName;
+
+      Assert.AreEqual(vendorName, result);
     }
 
   }
