@@ -12,20 +12,34 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("Test Vendor");
+      Order newOrder = new Order("Test Orderer", "Test Order Description");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
     [TestMethod]
-    public void GetVendorName_ReturnsVendorName_String()
+    public void GetOrderPlacedBy_ReturnsVendorName_String()
     {
-      string vendorName = "Test Vendor";
+      string orderPlacedBy = "Test Orderer";
+      string orderDescription = "Test Order Description";
 
-      Order newOrder = new Order(vendorName);
-      string result = newOrder.VendorName;
+      Order newOrder = new Order(orderPlacedBy, orderDescription);
+      string result = newOrder.OrderPlacedBy;
 
-      Assert.AreEqual(vendorName, result);
+      Assert.AreEqual(orderPlacedBy, result);
     }
+
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string orderPlacedBy = "Test Orderer";
+      string orderDescription = "Test Order Description";
+
+      Order newOrder = new Order(orderPlacedBy, orderDescription);
+      string result = newOrder.OrderDescription;
+
+      Assert.AreEqual(orderDescription, result);
+    }
+
 
   }
 }

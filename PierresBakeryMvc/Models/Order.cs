@@ -5,18 +5,18 @@ namespace PierresBakeryMvc.Models
 {
   public class Order
   {
-    public string VendorName { get; set; }
-    // public string Description { get; set; }
+    public string OrderPlacedBy { get; set; }
+    public string OrderDescription { get; set; }
     // // public DateTime Date { get; }
     // public int OrderPrice { get; set; }
     // public int Id { get; }
     // private static List<Order> _instances = new List<Order> { };
 
 
-    public Order(string vendorName)
+    public Order(string orderPlacedBy, string orderDescription)
     {
-      VendorName = vendorName;
-      // Description = description;
+      OrderPlacedBy = orderPlacedBy;
+      OrderDescription = orderDescription;
       // OrderPrice = orderPrice;
     }
 
