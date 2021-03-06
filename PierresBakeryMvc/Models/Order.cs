@@ -1,4 +1,4 @@
-using System;
+// using System;
 using System.Collections.Generic;
 
 namespace PierresBakeryMvc.Models
@@ -9,7 +9,7 @@ namespace PierresBakeryMvc.Models
     public string OrderDescription { get; set; }
     public int OrderPrice { get; set; }
     // public int Id { get; }
-    // private static List<Order> _instances = new List<Order> { };
+    private static List<Order> _instances = new List<Order> { };
 
     // // public DateTime Date { get; }
 
@@ -19,9 +19,18 @@ namespace PierresBakeryMvc.Models
       OrderPlacedBy = orderPlacedBy;
       OrderDescription = orderDescription;
       OrderPrice = orderPrice;
-      // _instances.Add(this);
+      _instances.Add(this);
       // Id = _instances.Count;
-      
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+
+    public static List<Order> GetAll()
+    {
+      return _instances;
     }
 
   }
