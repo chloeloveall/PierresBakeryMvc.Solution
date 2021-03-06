@@ -79,18 +79,18 @@ namespace PierresBakeryMvc.Tests
       CollectionAssert.AreEqual(newList, result);
     }
 
-    // [TestMethod]
-    // public void GetId_ReturnsOrderId_Int()
-    // {
-    //   string orderPlacedBy = "Test Orderer";
-    //   string orderDescription = "Test Order Description";
-    //   int orderPrice = 100;
+    [TestMethod]
+    public void GetId_ReturnsOrderId_Int()
+    {
+      string orderPlacedBy = "Test Orderer";
+      string orderDescription = "Test Order Description";
+      int orderPrice = 100;
 
-    //   Order newOrder = new Order(orderPlacedBy, orderDescription, orderPrice);
-    //   int result = newOrder.Id;
+      Order newOrder = new Order(orderPlacedBy, orderDescription, orderPrice);
+      int result = newOrder.Id;
 
-    //   Assert.AreEqual(1, result);
-    // }
+      Assert.AreEqual(1, result);
+    }
 
   }
 }

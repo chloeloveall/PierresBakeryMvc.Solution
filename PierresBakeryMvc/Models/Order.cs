@@ -8,7 +8,7 @@ namespace PierresBakeryMvc.Models
     public string OrderPlacedBy { get; set; }
     public string OrderDescription { get; set; }
     public int OrderPrice { get; set; }
-    // public int Id { get; }
+    public int Id { get; }
     private static List<Order> _instances = new List<Order> { };
 
     // // public DateTime Date { get; }
@@ -20,7 +20,7 @@ namespace PierresBakeryMvc.Models
       OrderDescription = orderDescription;
       OrderPrice = orderPrice;
       _instances.Add(this);
-      // Id = _instances.Count;
+      Id = _instances.Count;
     }
 
     public static void ClearAll()
