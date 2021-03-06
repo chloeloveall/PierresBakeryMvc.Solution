@@ -96,7 +96,9 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName = "Flying Fish Company";
       string vendorDescription = "Flying Fish Company Description";
-      Order newOrder = new Order (vendorName);
+      string orderPlacedBy = "Name of Orderer";
+      string orderDescription = "Description of Order";
+      Order newOrder = new Order (orderPlacedBy, orderDescription);
       List<Order> newList = new List<Order> { newOrder };
       Vendor newVendor = new Vendor(vendorName, vendorDescription);
       newVendor.AddOrder(newOrder);
