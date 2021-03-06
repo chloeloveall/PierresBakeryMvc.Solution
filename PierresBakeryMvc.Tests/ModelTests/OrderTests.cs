@@ -89,7 +89,7 @@ namespace PierresBakeryMvc.Tests
       Order newOrder = new Order(orderPlacedBy, orderDescription, orderPrice);
       int result = newOrder.Id;
 
-      Assert.AreEqual(1, result);
+      Assert.AreEqual(1001, result);
     }
 
   }

@@ -20,7 +20,7 @@ namespace PierresBakeryMvc.Models
       OrderDescription = orderDescription;
       OrderPrice = orderPrice;
       _instances.Add(this);
-      Id = _instances.Count;
+      Id = _instances.Count + 1000;
     }
 
     public static void ClearAll()
