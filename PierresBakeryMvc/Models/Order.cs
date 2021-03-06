@@ -7,17 +7,21 @@ namespace PierresBakeryMvc.Models
   {
     public string OrderPlacedBy { get; set; }
     public string OrderDescription { get; set; }
-    // // public DateTime Date { get; }
-    // public int OrderPrice { get; set; }
+    public int OrderPrice { get; set; }
     // public int Id { get; }
     // private static List<Order> _instances = new List<Order> { };
 
+    // // public DateTime Date { get; }
 
-    public Order(string orderPlacedBy, string orderDescription)
+
+    public Order(string orderPlacedBy, string orderDescription, int orderPrice)
     {
       OrderPlacedBy = orderPlacedBy;
       OrderDescription = orderDescription;
-      // OrderPrice = orderPrice;
+      OrderPrice = orderPrice;
+      // _instances.Add(this);
+      // Id = _instances.Count;
+      
     }
 
   }
