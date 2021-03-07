@@ -64,11 +64,11 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetAll_ReturnsOrders_OrderList()
     {
-      string orderPlacedBy1 = "Test Orderer";
-      string orderDescription1 = "Test Order Description";
+      string orderPlacedBy1 = "Test Orderer 1";
+      string orderDescription1 = "Test Order Description 1";
       int orderPrice1 = 100;
-      string orderPlacedBy2 = "Test Orderer";
-      string orderDescription2 = "Test Order Description";
+      string orderPlacedBy2 = "Test Orderer 2";
+      string orderDescription2 = "Test Order Description 2";
       int orderPrice2 = 150;
       Order newOrder1 = new Order(orderPlacedBy1, orderDescription1, orderPrice1);
       Order newOrder2 = new Order(orderPlacedBy2, orderDescription2, orderPrice2);
@@ -90,6 +90,19 @@ namespace PierresBakeryMvc.Tests
       int result = newOrder.Id;
 
       Assert.AreEqual(1001, result);
+    }
+
+    [TestMethod]
+    public void GetDate_ReturnsOrderDate_DateTime()
+    {
+      string orderPlacedBy = "Test Orderer";
+      string orderDescription = "Test Order Description";
+      int orderPrice = 100;
+
+      Order newOrder = new Order(orderPlacedBy, orderDescription, orderPrice);
+      DateTime result = newOrder.Date;
+
+      Assert.AreEqual(DateTime.Today, result);
     }
 
   }
