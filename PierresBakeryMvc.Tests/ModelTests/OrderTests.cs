@@ -1,8 +1,7 @@
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Collections.Generic;
 using PierresBakeryMvc.Models;
-// using System;
+using System;
+using System.Collections.Generic;
 
 namespace PierresBakeryMvc.Tests
 {
@@ -103,6 +102,24 @@ namespace PierresBakeryMvc.Tests
       DateTime result = newOrder.Date;
 
       Assert.AreEqual(DateTime.Today, result);
+    }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      string orderPlacedBy1 = "Test Orderer 1";
+      string orderDescription1 = "Test Order Description 1";
+      int orderPrice1 = 100;
+      string orderPlacedBy2 = "Test Orderer 2";
+      string orderDescription2 = "Test Order Description 2";
+      int orderPrice2 = 150;
+      Order newOrder1 = new Order(orderPlacedBy1, orderDescription1, orderPrice1);
+      Order newOrder2 = new Order(orderPlacedBy2, orderDescription2, orderPrice2);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+
+      Order result = Order.Find(2);
+
+      Assert.AreEqual(newOrder2, result);
     }
 
   }
