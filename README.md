@@ -1,4 +1,4 @@
-![splash page image](img/pierres-bakery.png)
+![pierre's splash page image](PierresBakeryMvc/wwwroot/img/pierres-header.png)
 
 # _Pierre's Bakery Vendor List_
 
@@ -65,11 +65,16 @@ A detailed description
 
 ## Specifications
 
-| Behavior                                                         | Input             | Output                 |
-| ---------------------------------------------------------------- | :---------------- | :--------------------- |
-| Program will begin on a splash                                   | user runs program | localhost:5000/        |
-| User can click a link to be directed to a vendors page           | user clicks link  | localhost:5000/vendors |
-| User can add a vendor to a list                                  | "Suzie's Cafe     | "Suzie's Cafe"         |
+| Behavior                                                         | Input                      | Output                     |
+| ---------------------------------------------------------------- | :------------------------- | :------------------------- |
+| Program will begin on a splash                                   | user runs program          | localhost:5000/            |
+| User can click a link to be directed to a vendors page           | user clicks link           | localhost:5000/vendors     |
+| User can add a vendor to a list                                  | "Suzie's Cafe              | "Suzie's Cafe"             |
+| User can add multiple properties to each vendor                  |                            |                            |
+| User can add an order to a vendor                                |                            |                            |
+| User can add multiple properties to each order                   |                            |                            |
+| User will be routed back to home page after vendor is added      |                            |                            |
+| User can click vendor's name and view all associated orders      | user clicks "Suzie's Cafe" | localhost:5000/suziescafe  |
 
 ## Known Bugs
 
@@ -92,9 +97,10 @@ Contributions are what make the open source community such an amazing place to b
 
 ## Acknowledgements
 
-* [Shields](https://shields.io/)
 * [Choose an open source license](https://choosealicense.com/)
 * [Microsoft C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [Shields](https://shields.io/)
+* [Unplash: Photos for Everyone](https://unsplash.com/)
 
 ## Contact Information
 
