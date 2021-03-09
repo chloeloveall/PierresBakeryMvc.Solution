@@ -142,6 +142,23 @@ namespace PierresBakeryMvc.Tests
       Assert.AreEqual(vendorState, result);
     }
 
+[TestMethod]
+    public void GetVendorZip_ReturnsVendorZip_String()
+    {
+      string vendorName = "Test Vendor";
+      string vendorDescription = "Test Description";
+      string vendorAddress = "Test Address";
+      string vendorAddress2 = "Test Address 2";
+      string vendorCity = "Test City";
+      string vendorState = "Test State";
+      int vendorZip = 98006;
+      Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
+
+      int result = newVendor.VendorZip;
+
+      Assert.AreEqual(vendorZip, result);
+    }
+
     [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {

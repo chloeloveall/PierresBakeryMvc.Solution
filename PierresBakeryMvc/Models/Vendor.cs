@@ -24,7 +24,7 @@ namespace PierresBakeryMvc.Models
       VendorAddress2 = vendorAddress2;
       VendorCity = vendorCity;
       VendorState = vendorState;
-      // VendorZip = vendorZip;
+      VendorZip = vendorZip;
       _instances.Add(this);
       Id = _instances.Count;
       Orders = new List<Order>{};
