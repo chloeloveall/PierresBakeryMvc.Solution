@@ -22,7 +22,7 @@ namespace PierresBakeryMvc.Models
       VendorDescription = vendorDescription;
       VendorAddress = vendorAddress;
       VendorAddress2 = vendorAddress2;
-      // VendorCity = vendorCity;
+      VendorCity = vendorCity;
       // VendorState = vendorState;
       // VendorZip = vendorZip;
       _instances.Add(this);

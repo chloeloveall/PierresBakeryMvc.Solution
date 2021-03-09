@@ -109,6 +109,23 @@ namespace PierresBakeryMvc.Tests
     }
 
     [TestMethod]
+    public void GetVendorCity_ReturnsVendorCity_String()
+    {
+      string vendorName = "Test Vendor";
+      string vendorDescription = "Test Description";
+      string vendorAddress = "Test Address";
+      string vendorAddress2 = "Test Address 2";
+      string vendorCity = "Test City";
+      string vendorState = "Test State";
+      int vendorZip = 98006;
+      Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
+
+      string result = newVendor.VendorCity;
+
+      Assert.AreEqual(vendorCity, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
       string vendorName1 = "Flying Fish Company";
