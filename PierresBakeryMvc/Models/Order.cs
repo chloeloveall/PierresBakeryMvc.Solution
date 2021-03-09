@@ -5,6 +5,7 @@ namespace PierresBakeryMvc.Models
 {
   public class Order
   {
+    public string OrderTitle { get; set; }
     public string OrderPlacedBy { get; set; }
     public string OrderDescription { get; set; }
     public int OrderPrice { get; set; }
@@ -14,8 +15,9 @@ namespace PierresBakeryMvc.Models
     // public bool Paid { get; set; }
     private static List<Order> _instances = new List<Order> { };
 
-    public Order(string orderPlacedBy, string orderDescription, int orderPrice)
+    public Order(string orderTitle, string orderPlacedBy, string orderDescription, int orderPrice)
     {
+      OrderTitle = orderTitle;
       OrderPlacedBy = orderPlacedBy;
       OrderDescription = orderDescription;
       OrderPrice = orderPrice;
