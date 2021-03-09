@@ -1,0 +1,48 @@
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+  <div class="centered-content">
+    <h1>@Model["vendor"].VendorName</h1>
+      <div class="form-row">
+        <div class="form-group col-md-12 text-center">
+          <p>@Model["vendor"].VendorAddress, @Model["vendor"].VendorAddress2, @Model["vendor"].VendorCity, @Model["vendor"].VendorState, @Model["vendor"].VendorZip </p>
+        </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-md-12">
+              <div class="card text-center">
+                <div class="card-header">
+                  <p>ORDER NO. @Model["order"].Id</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">@Model["order"].OrderTitle</p>
+                  <p class="card-text">ORDERED BY: @Model["order"].OrderPlacedBy</p>
+                  <p class="card-text">ORDER TOTAL: $@Model["order"].OrderPrice</p>
+                  <p class="card-text">@Model["order"].OrderDescription</p>
+                </div>
+                <div class="card-footer text-muted">
+                  <p>ORDER DATE: @Model["order"].Date</p>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <p><a href="/vendors" role="button">RETURN TO VENDORS</a></p>
+      </div>
+      <div class="col-xs-4">
+        <p>COPYRIGHT &copy; <a href = "mailto: chloeloveall@protonmail.com">CHLOE LOVEALL</a> 2021</p>
+      </div>
+      <div class="col-xs-4">
+        <p><a href="/" role="button">RETURN TO HOME</a></p>
+      </div>
+    </div>
+  </div>
+</div>
