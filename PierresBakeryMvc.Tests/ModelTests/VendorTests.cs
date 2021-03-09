@@ -96,10 +96,11 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName = "Flying Fish Company";
       string vendorDescription = "Flying Fish Company Description";
+      string orderTitle = "Flying Fish Order Title";
       string orderPlacedBy = "Name of Orderer";
       string orderDescription = "Description of Order";
       int orderPrice = 100;
-      Order newOrder = new Order (orderPlacedBy, orderDescription, orderPrice);
+      Order newOrder = new Order (orderTitle, orderPlacedBy, orderDescription, orderPrice);
       List<Order> newList = new List<Order> { newOrder };
       Vendor newVendor = new Vendor(vendorName, vendorDescription);
       newVendor.AddOrder(newOrder);
