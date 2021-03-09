@@ -4,16 +4,45 @@
 
 @using PierresBakeryMvc.Models;
 
-<h1>Vendors</h1>
+<div class="container">
+  <div class="centered-content">
+    <h1>VENDORS</h1>
+      <div class="form-row">
+        <div class="form-group col-md-12 text-center">
+          <a href='/vendors/new' role="button" class="btn btn-three">ADD VENDOR</a>
+        </div>
+        <div class="form-group col-md-12 text-center">
+          @if (@Model.Count == 0)
+          {
+            <p>NO VENDORS HAVE BEEN ADDED</p>
+          } 
+        </div>
+      </div>
+      <div class="form-row text-center">
+        <div class="form-group col-md-12 overflow">
+          @foreach (Vendor vendor in Model)
+          {
+            <h3><a href='/vendors/@vendor.Id'>@vendor.VendorName</a></h3>
+            <p>@vendor.VendorAddress, @vendor.VendorAddress2, @vendor.VendorCity, @vendor.VendorState, @vendor.VendorZip</p>
+            <p>@vendor.VendorDescription</p>
+          }
+        </div>
+      </div>
+  </div>
+</div>
 
-@if (@Model.Count == 0)
-{
-  <h3>No vendors have been added yet!</h3>
-} 
-
-@foreach (Vendor vendor in Model)
-{
-  <h3><a href='/vendors/@vendor.Id'>@vendor.VendorName</a></h3>
-}
-
-<p><a href='/'>Back home</a></p>
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-4">
+        <p><a href="/vendors" role="button">RETURN TO VENDORS</a></p>
+      </div>
+      <div class="col-xs-4">
+        <p>COPYRIGHT &copy; <a href = "mailto: chloeloveall@protonmail.com">CHLOE LOVEALL</a> 2021</p>
+      </div>
+      <div class="col-xs-4">
+        <p><a href="/" role="button">RETURN TO HOME</a></p>
+      </div>
+    </div>
+  </div>
+</div>
