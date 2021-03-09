@@ -18,19 +18,19 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor("Test Vendor", "Test Description", "Test Address", "Test Address 2", "Test City", "Test State", 98006);
+      Vendor newVendor = new Vendor("TEST VENDOR", "TEST DESCRIPTION", "TEST ADDRESS", "TEST ADDRESS 2", "TEST CITY", "TEST STATE", 98006);
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
     [TestMethod]
     public void GetVendorName_ReturnsVendorName_String()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
-      string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
+      string vendorAddress2 = "TEST ADDRESS 2";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -42,12 +42,12 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetId_ReturnsVendorId_Int()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
-      string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
+      string vendorAddress2 = "TEST ADDRESS 2";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -59,12 +59,12 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetDescription_ReturnsDescription_String()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
-      string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
+      string vendorAddress2 = "TEST ADDRESS 2";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -77,12 +77,12 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetVendorAddress_ReturnsVendorAddress_String()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
       string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -94,12 +94,12 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetVendorAddress2_ReturnsVendorAddress2_String()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
-      string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
+      string vendorAddress2 = "TEST ADDRESS 2";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -111,12 +111,12 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetVendorCity_ReturnsVendorCity_String()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
-      string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
+      string vendorAddress2 = "TEST ADDRESS 2";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -128,12 +128,12 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetVendorState_ReturnsVendorState_String()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
-      string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
+      string vendorAddress2 = "TEST ADDRESS 2";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -145,12 +145,12 @@ namespace PierresBakeryMvc.Tests
 [TestMethod]
     public void GetVendorZip_ReturnsVendorZip_String()
     {
-      string vendorName = "Test Vendor";
-      string vendorDescription = "Test Description";
-      string vendorAddress = "Test Address";
-      string vendorAddress2 = "Test Address 2";
-      string vendorCity = "Test City";
-      string vendorState = "Test State";
+      string vendorName = "TEST VENDOR";
+      string vendorDescription = "TEST DESCRIPTION";
+      string vendorAddress = "TEST ADDRESS";
+      string vendorAddress2 = "TEST ADDRESS 2";
+      string vendorCity = "TEST CITY";
+      string vendorState = "TEST STATE";
       int vendorZip = 98006;
       Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
@@ -162,19 +162,19 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetAll_ReturnsAllVendorObjects_VendorList()
     {
-      string vendorName1 = "Flying Fish Company";
-      string vendorDescription1 = "Flying Fish Company Description";
-      string vendorAddress = "Flying Fish Address";
-      string vendorAddress2 = "Flying Fish Address 2";
-      string vendorCity = "Flying Fish City";
-      string vendorState = "Flying Fish State";
+      string vendorName1 = "FLYING FISH COMPANY";
+      string vendorDescription1 = "FLYING FISH COMPANY DESCRIPTION";
+      string vendorAddress = "FLYING FISH ADDRESS";
+      string vendorAddress2 = "FLYING FISH ADDRESS 2";
+      string vendorCity = "FLYING FISH CITY";
+      string vendorState = "FLYING FISH STATE";
       int vendorZip = 98006;
-      string vendorName2 = "Vivienne";
-      string vendorDescription2 = "Vivienne Description";
-      string vendorAddressAlt = "Vivienne Address";
-      string vendorAddressAlt2 = "Vivienne Address 2";
-      string vendorCity2 = "Vivienne City";
-      string vendorState2 = "Vivienne State";
+      string vendorName2 = "VIVIENNE";
+      string vendorDescription2 = "VIVIENNE DESCRIPTION";
+      string vendorAddressAlt = "VIVIENNE ADDRESS";
+      string vendorAddressAlt2 = "VIVIENNE ADDRESS 2";
+      string vendorCity2 = "VIVIENNE CITY";
+      string vendorState2 = "VIVIENNE STATE";
       int vendorZip2 = 98006;
       Vendor newVendor1 = new Vendor(vendorName1, vendorDescription1, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
       Vendor newVendor2 = new Vendor(vendorName2, vendorDescription2, vendorAddressAlt, vendorAddressAlt2, vendorCity2, vendorState2, vendorZip2);
@@ -188,19 +188,19 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void Find_ReturnsCorrectVendor_Vendor()
     {
-      string vendorName1 = "Flying Fish Company";
-      string vendorDescription1 = "Flying Fish Company Description";
-      string vendorAddress = "Flying Fish Address";
-      string vendorAddress2 = "Flying Fish Address 2";
-      string vendorCity = "Flying Fish City";
-      string vendorState = "Flying Fish State";
+      string vendorName1 = "FLYING FISH COMPANY";
+      string vendorDescription1 = "FLYING FISH COMPANY DESCRIPTION";
+      string vendorAddress = "FLYING FISH ADDRESS";
+      string vendorAddress2 = "FLYING FISH ADDRESS 2";
+      string vendorCity = "FLYING FISH CITY";
+      string vendorState = "FLYING FISH STATE";
       int vendorZip = 98006;
-      string vendorName2 = "Vivienne";
-      string vendorDescription2 = "Vivienne Description";
-      string vendorAddressAlt = "Vivienne Address";
-      string vendorAddressAlt2 = "Vivienne Address 2";
-      string vendorCity2 = "Vivienne City";
-      string vendorState2 = "Vivienne State";
+      string vendorName2 = "VIVIENNE";
+      string vendorDescription2 = "VIVIENNE DESCRIPTION";
+      string vendorAddressAlt = "VIVIENNE ADDRESS";
+      string vendorAddressAlt2 = "VIVIENNE ADDRESS 2";
+      string vendorCity2 = "VIVIENNE CITY";
+      string vendorState2 = "VIVIENNE STATE";
       int vendorZip2 = 98006;
       Vendor newVendor1 = new Vendor(vendorName1, vendorDescription1, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
       Vendor newVendor2 = new Vendor(vendorName2, vendorDescription2, vendorAddressAlt, vendorAddressAlt2, vendorCity2, vendorState2, vendorZip2);
@@ -214,16 +214,16 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void AddOrder_AssociatesOrderWithVendor_OrderList()
     {
-      string vendorName = "Flying Fish Company";
-      string vendorDescription = "Flying Fish Company Description";
-      string vendorAddress = "Flying Fish Address";
-      string vendorAddress2 = "Flying Fish Address 2";
-      string vendorCity = "Flying Fish City";
-      string vendorState = "Flying Fish State";
+      string vendorName = "FFLYING FISH COMPANY";
+      string vendorDescription = "FLYING FISH COMPANY DESCRIPTION";
+      string vendorAddress = "FLYING FISH ADDRESS";
+      string vendorAddress2 = "FLYING FISH ADDRESS 2";
+      string vendorCity = "FLYING FISH CITY";
+      string vendorState = "FLYING FISH STATE";
       int vendorZip = 98006;
-      string orderTitle = "Flying Fish Order Title";
-      string orderPlacedBy = "Name of Orderer";
-      string orderDescription = "Description of Order";
+      string orderTitle = "FLYING FISH ORDER TITLE";
+      string orderPlacedBy = "NAME OF ORDERER";
+      string orderDescription = "DESCRIPTION OF ORDER";
       int orderPrice = 100;
       Order newOrder = new Order (orderTitle, orderPlacedBy, orderDescription, orderPrice);
       List<Order> newList = new List<Order> { newOrder };

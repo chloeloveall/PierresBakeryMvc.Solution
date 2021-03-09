@@ -17,16 +17,16 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      Order newOrder = new Order("Test Title", "Test Orderer", "Test Order Description", 100);
+      Order newOrder = new Order("TEST TITLE", "TEST ORDERER", "TEST ORDER DESCRIPTION", 100);
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
 
     [TestMethod]
     public void GetOrderPlacedBy_ReturnsVendorName_String()
     {
-      string orderTitle = "Test Title";
-      string orderPlacedBy = "Test Orderer";
-      string orderDescription = "Test Order Description";
+      string orderTitle = "TEST TITLE";
+      string orderPlacedBy = "TEST ORDERER";
+      string orderDescription = "TEST ORDER DESCRIPTION";
       int orderPrice = 100;
 
       Order newOrder = new Order(orderTitle, orderPlacedBy, orderDescription, orderPrice);
@@ -37,9 +37,9 @@ namespace PierresBakeryMvc.Tests
 
     public void GetOrderTitle_ReturnsOrderTitle_String()
     {
-      string orderTitle = "Test Title";
-      string orderPlacedBy = "Test Orderer";
-      string orderDescription = "Test Order Description";
+      string orderTitle = "TEST TITLE";
+      string orderPlacedBy = "TEST ORDERER";
+      string orderDescription = "TEST ORDER DESCRIPTION";
       int orderPrice = 100;
 
       Order newOrder = new Order(orderTitle, orderPlacedBy, orderDescription, orderPrice);
@@ -51,9 +51,9 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetDescription_ReturnsDescription_String()
     {
-      string orderTitle = "Test Title";
-      string orderPlacedBy = "Test Orderer";
-      string orderDescription = "Test Order Description";
+      string orderTitle = "TEST TITLE";
+      string orderPlacedBy = "TEST ORDERER";
+      string orderDescription = "TEST ORDER DESCRIPTION";
       int orderPrice = 100;
 
       Order newOrder = new Order(orderTitle, orderPlacedBy, orderDescription, orderPrice);
@@ -65,9 +65,9 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetOrderPrice_ReturnsOrderPrice_Int()
     {
-      string orderTitle = "Test Title";
-      string orderPlacedBy = "Test Orderer";
-      string orderDescription = "Test Order Description";
+      string orderTitle = "TEST TITLE";
+      string orderPlacedBy = "TEST ORDERER";
+      string orderDescription = "TEST ORDER DESCRIPTION";
       int orderPrice = 100;
 
       Order newOrder = new Order(orderTitle, orderPlacedBy, orderDescription, orderPrice);
@@ -79,13 +79,13 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetAll_ReturnsOrders_OrderList()
     {
-      string orderTitle1 = "Test Title 1";
-      string orderPlacedBy1 = "Test Orderer 1";
-      string orderDescription1 = "Test Order Description 1";
+      string orderTitle1 = "TEST TITLE 1";
+      string orderPlacedBy1 = "TEST ORDERER 1";
+      string orderDescription1 = "TEST ORDER DESCRIPTION 1";
       int orderPrice1 = 100;
-      string orderTitle2 = "Test Title 2";
-      string orderPlacedBy2 = "Test Orderer 2";
-      string orderDescription2 = "Test Order Description 2";
+      string orderTitle2 = "TEST TITLE 2";
+      string orderPlacedBy2 = "TEST ORDERER 2";
+      string orderDescription2 = "TEST ORDER DESCRIPTION 2";
       int orderPrice2 = 150;
       Order newOrder1 = new Order(orderTitle1, orderPlacedBy1, orderDescription1, orderPrice1);
       Order newOrder2 = new Order(orderTitle2, orderPlacedBy2, orderDescription2, orderPrice2);
@@ -99,9 +99,9 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetId_ReturnsOrderId_Int()
     {
-      string orderTitle = "Test Title";
-      string orderPlacedBy = "Test Orderer";
-      string orderDescription = "Test Order Description";
+      string orderTitle = "TEST TITLE";
+      string orderPlacedBy = "TEST ORDERER";
+      string orderDescription = "TEST ORDER DESCRIPTION";
       int orderPrice = 100;
 
       Order newOrder = new Order(orderTitle, orderPlacedBy, orderDescription, orderPrice);
@@ -113,9 +113,9 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void GetDate_ReturnsOrderDate_DateTime()
     {
-      string orderTitle = "Test Title";
-      string orderPlacedBy = "Test Orderer";
-      string orderDescription = "Test Order Description";
+      string orderTitle = "TEST TITLE";
+      string orderPlacedBy = "TEST ORDERER";
+      string orderDescription = "TEST ORDER DESCRIPTION";
       int orderPrice = 100;
 
       Order newOrder = new Order(orderTitle, orderPlacedBy, orderDescription, orderPrice);
@@ -127,13 +127,13 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void Find_ReturnsCorrectOrder_Order()
     {
-      string orderTitle1 = "Test Title 1";
-      string orderPlacedBy1 = "Test Orderer 1";
-      string orderDescription1 = "Test Order Description 1";
+      string orderTitle1 = "TEST TITLE 1";
+      string orderPlacedBy1 = "TEST ORDERER 1";
+      string orderDescription1 = "TEST ORDER DESCRIPTION 1";
       int orderPrice1 = 100;
-      string orderTitle2 = "Test Title 2";
-      string orderPlacedBy2 = "Test Orderer 2";
-      string orderDescription2 = "Test Order Description 2";
+      string orderTitle2 = "TEST TITLE 2";
+      string orderPlacedBy2 = "TEST ORDERER 2";
+      string orderDescription2 = "TEST ORDER DESCRIPTION 2";
       int orderPrice2 = 150;
       Order newOrder1 = new Order(orderTitle1, orderPlacedBy1, orderDescription1, orderPrice1);
       Order newOrder2 = new Order(orderTitle2, orderPlacedBy2, orderDescription2, orderPrice2);
