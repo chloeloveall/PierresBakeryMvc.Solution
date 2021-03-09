@@ -22,9 +22,9 @@ namespace PierresBakeryMvc.Controllers
     }
 
     [HttpPost("/vendors")]
-    public ActionResult Create(string vendorName, string vendorDescription)
+    public ActionResult Create(string vendorName, string vendorDescription, string vendorAddress, string vendorAddress2, string vendorCity, string vendorState, int vendorZip)
     {
-      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
       return RedirectToAction("Index");
     }
 

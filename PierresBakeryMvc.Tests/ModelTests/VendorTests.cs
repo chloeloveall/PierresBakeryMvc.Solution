@@ -18,7 +18,7 @@ namespace PierresBakeryMvc.Tests
     [TestMethod]
     public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
     {
-      Vendor newVendor = new Vendor("Test Vendor", "Test Description");
+      Vendor newVendor = new Vendor("Test Vendor", "Test Description", "Test Address", "Test Address 2", "Test City", "Test State", 98006);
       Assert.AreEqual(typeof(Vendor), newVendor.GetType());
     }
 
@@ -27,7 +27,12 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName = "Test Vendor";
       string vendorDescription = "Test Description";
-      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      string vendorAddress = "Test Address";
+      string vendorAddress2 = "Test Address 2";
+      string vendorCity = "Test City";
+      string vendorState = "Test State";
+      int vendorZip = 98006;
+      Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
       string result = newVendor.VendorName;
 
@@ -39,7 +44,12 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName = "Test Vendor";
       string vendorDescription = "Test Description";
-      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      string vendorAddress = "Test Address";
+      string vendorAddress2 = "Test Address 2";
+      string vendorCity = "Test City";
+      string vendorState = "Test State";
+      int vendorZip = 98006;
+      Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
       int result = newVendor.Id;
 
@@ -51,7 +61,12 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName = "Test Vendor";
       string vendorDescription = "Test Description";
-      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      string vendorAddress = "Test Address";
+      string vendorAddress2 = "Test Address 2";
+      string vendorCity = "Test City";
+      string vendorState = "Test State";
+      int vendorZip = 98006;
+      Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
 
       string result = newVendor.VendorDescription;
 
@@ -64,10 +79,20 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName1 = "Flying Fish Company";
       string vendorDescription1 = "Flying Fish Company Description";
+      string vendorAddress = "Flying Fish Address";
+      string vendorAddress2 = "Flying Fish Address 2";
+      string vendorCity = "Flying Fish City";
+      string vendorState = "Flying Fish State";
+      int vendorZip = 98006;
       string vendorName2 = "Vivienne";
       string vendorDescription2 = "Vivienne Description";
-      Vendor newVendor1 = new Vendor(vendorName1, vendorDescription1);
-      Vendor newVendor2 = new Vendor(vendorName2, vendorDescription2);
+      string vendorAddressAlt = "Vivienne Address";
+      string vendorAddressAlt2 = "Vivienne Address 2";
+      string vendorCity2 = "Vivienne City";
+      string vendorState2 = "Vivienne State";
+      int vendorZip2 = 98006;
+      Vendor newVendor1 = new Vendor(vendorName1, vendorDescription1, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
+      Vendor newVendor2 = new Vendor(vendorName2, vendorDescription2, vendorAddressAlt, vendorAddressAlt2, vendorCity2, vendorState2, vendorZip2);
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
       List<Vendor> result = Vendor.GetAll();
@@ -80,10 +105,20 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName1 = "Flying Fish Company";
       string vendorDescription1 = "Flying Fish Company Description";
+      string vendorAddress = "Flying Fish Address";
+      string vendorAddress2 = "Flying Fish Address 2";
+      string vendorCity = "Flying Fish City";
+      string vendorState = "Flying Fish State";
+      int vendorZip = 98006;
       string vendorName2 = "Vivienne";
       string vendorDescription2 = "Vivienne Description";
-      Vendor newVendor1 = new Vendor(vendorName1, vendorDescription1);
-      Vendor newVendor2 = new Vendor(vendorName2, vendorDescription2);
+      string vendorAddressAlt = "Vivienne Address";
+      string vendorAddressAlt2 = "Vivienne Address 2";
+      string vendorCity2 = "Vivienne City";
+      string vendorState2 = "Vivienne State";
+      int vendorZip2 = 98006;
+      Vendor newVendor1 = new Vendor(vendorName1, vendorDescription1, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
+      Vendor newVendor2 = new Vendor(vendorName2, vendorDescription2, vendorAddressAlt, vendorAddressAlt2, vendorCity2, vendorState2, vendorZip2);
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
 
       Vendor result = Vendor.Find(2);
@@ -96,13 +131,18 @@ namespace PierresBakeryMvc.Tests
     {
       string vendorName = "Flying Fish Company";
       string vendorDescription = "Flying Fish Company Description";
+      string vendorAddress = "Flying Fish Address";
+      string vendorAddress2 = "Flying Fish Address 2";
+      string vendorCity = "Flying Fish City";
+      string vendorState = "Flying Fish State";
+      int vendorZip = 98006;
       string orderTitle = "Flying Fish Order Title";
       string orderPlacedBy = "Name of Orderer";
       string orderDescription = "Description of Order";
       int orderPrice = 100;
       Order newOrder = new Order (orderTitle, orderPlacedBy, orderDescription, orderPrice);
       List<Order> newList = new List<Order> { newOrder };
-      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      Vendor newVendor = new Vendor(vendorName, vendorDescription, vendorAddress, vendorAddress2, vendorCity, vendorState, vendorZip);
       newVendor.AddOrder(newOrder);
 
       List<Order> result = newVendor.Orders;
