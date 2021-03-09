@@ -18,12 +18,12 @@ namespace PierresBakeryMvc.Models
 
     public Vendor(string vendorName, string vendorDescription, string vendorAddress, string vendorAddress2, string vendorCity, string vendorState, int vendorZip)
     {
-      VendorName = vendorName;
-      VendorDescription = vendorDescription;
-      VendorAddress = vendorAddress;
-      VendorAddress2 = vendorAddress2;
-      VendorCity = vendorCity;
-      VendorState = vendorState;
+      VendorName = vendorName.ToUpper();
+      VendorDescription = vendorDescription.ToUpper();
+      VendorAddress = vendorAddress.ToUpper();
+      VendorAddress2 = vendorAddress2.ToUpper();
+      VendorCity = vendorCity.ToUpper();
+      VendorState = vendorState.ToUpper();
       VendorZip = vendorZip;
       _instances.Add(this);
       Id = _instances.Count;

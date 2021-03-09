@@ -17,9 +17,9 @@ namespace PierresBakeryMvc.Models
 
     public Order(string orderTitle, string orderPlacedBy, string orderDescription, int orderPrice)
     {
-      OrderTitle = orderTitle;
-      OrderPlacedBy = orderPlacedBy;
-      OrderDescription = orderDescription;
+      OrderTitle = orderTitle.ToUpper();
+      OrderPlacedBy = orderPlacedBy.ToUpper();
+      OrderDescription = orderDescription.ToUpper();
       OrderPrice = orderPrice;
       _instances.Add(this);
       Id = _instances.Count;
